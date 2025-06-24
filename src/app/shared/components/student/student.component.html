@@ -1,0 +1,567 @@
+<div class="row " style="background-color: rgb(160, 143, 95);">
+    
+    <div class="col-md-6">
+        <h2>Form group</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>flight no</th>
+                    <th>dest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let flight of flights1 ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{flight.flightNo}}</td>
+                    <td>{{flight.destination}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>cat</th>
+                    <th>amt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let exp of expenses ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{exp.category}}</td>
+                    <td>{{exp.amount}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>cat</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let prod of products ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{prod.id}}</td>
+                    <td>{{prod.name}}</td>
+                    <td>{{prod.category}}</td>
+                    <td>{{prod.price}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>dept</th>
+                    <th>exp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let emp of employees ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.department}}</td>
+                    <td>{{emp.experience}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>sub</th>
+                    <th>grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let sub of students; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{sub.id}}</td>
+                    <td>{{sub.name}}</td>
+                    <td>{{sub.subjects}}</td>
+                    <td>{{sub.grades}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>project</th>
+                    <th>members</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let team of teams ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{team.teamId}}</td>
+                    <td>{{team.project}}</td>
+                    <td>{{team.members}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>subcat</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let cats of categories ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{cats.id}}</td>
+                    <td>{{cats.name}}</td>
+                    <td>{{cats.subcategories}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>author</th>
+                    <th>genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let book of books ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{book.id}}</td>
+                    <td>{{book.title}}</td>
+                    <td>{{book.author}}</td>
+                    <td>{{book.genre}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>rating</th>
+                    <th>duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let mov of movies ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{mov.id}}</td>
+                    <td>{{mov.title}}</td>
+                    <td>{{mov.rating}}</td>
+                    <td>{{mov.duration}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>day</th>
+                    <th>activities</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let work of workoutPlans ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{work.id}}</td>
+                    <td>{{work.day}}</td>
+                    <td>{{work.activities}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>event</th>
+                    <th>attendees</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let eve of events; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{eve.id}}</td>
+                    <td>{{eve.event}}</td>
+                    <td>{{eve.attendees}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>phone</th>
+                    <th>company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let client of clients ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{client.id}}</td>
+                    <td>{{client.name}}</td>
+                    <td>{{client.phone}}</td>
+                    <td>{{client.company}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>loc</th>
+                    <th>rat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let supp of suppliers ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{supp.id}}</td>
+                    <td>{{supp.name}}</td>
+                    <td>{{supp.location}}</td>
+                    <td>{{supp.rating}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>menus</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let rest of restaurants ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{rest.id}}</td>
+                    <td>{{rest.name}}</td>
+                    <td>{{rest.menus}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>dept</th>
+                    <th>manager</th>
+                    <th>employee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let dept of departments ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{dept.id}}</td>
+                    <td>{{dept.department}}</td>
+                    <td>{{dept.manager}}</td>
+                    <td>{{dept.employees}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>amt</th>
+                    <th>date</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let trans of transactions; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{trans.id}}</td>
+                    <td>{{trans.amount}}</td>
+                    <td>{{trans.date}}</td>
+                    <td>{{trans.status}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>instructor</th>
+                    <th>hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let course of courses ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{course.id}}</td>
+                    <td>{{course.title}}</td>
+                    <td>{{course.instructor}}</td>
+                    <td>{{course.hours}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>species</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let pet of pets ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{pet.id}}</td>
+                    <td>{{pet.name}}</td>
+                    <td>{{pet.species}}</td>
+                    <td>{{pet.age}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>from</th>
+                    <th>to</th>
+                    <th>duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let flight of flights ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{flight.id}}</td>
+                    <td>{{flight.from}}</td>
+                    <td>{{flight.to}}</td>
+                    <td>{{flight.duration}}</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+
+                    <th>name</th>
+                    <th>age</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let std of students1 ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{std.name}}</td>
+                    <td>{{std.age}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+
+                    <th>id</th>
+                    <th>name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let prod of products2 ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{prod.id}}</td>
+                    <td>{{prod.name}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>username</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let user of users ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{user.id}}</td>
+                    <td>{{user.username}}</td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<div class="row" style="background-color: rgb(160, 143, 95);">
+    <div class="col-md-10 ">
+        <table class=" table table-bordered">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>id</th>
+                    <th>products
+                        <thead>
+                            <th>name</th>
+                            <th>qty</th>
+                        </thead>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let order of orders ; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{order.orderId}}</td>
+                    <td>
+                        <ul class="list-group" >
+                            <li class="list-group-item d-flex justify-content-between" style="background-color: rgb(161, 120, 109);"
+                                *ngFor="let prod of order.products">
+                                <span>{{prod.name}}</span>
+                                <span>{{prod.qty}}</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
